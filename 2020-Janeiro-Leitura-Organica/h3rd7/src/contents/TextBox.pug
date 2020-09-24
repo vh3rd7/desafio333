@@ -1,0 +1,19 @@
+// Text Box
+.tbox
+
+  label(for='textArea') Caixa de Leitura
+  
+  #text-box(class='flex-col md:flex-row')
+    textarea#text_area.flex-grow(rows='10', 
+      placeholder='Adicione um texto a caixa de leitura e clique em Start para começar ou apenas  \nClique em Start que nós adicionamos um texto para você. \n* mínimo de 600 palavras, máximo de 1000.',
+      onkeyup='wordCount()')
+
+    div.w-100(class='md:flex-col')
+    
+      button#start.btn(onclick='startTest()') Start
+      span#time_info
+      button.btn(onclick='clearTest()') Limpar
+      
+      span#txtbox_info * Palavras
+
+div(style='height:400px')

@@ -1,0 +1,9 @@
+mixin link(name, href)
+  a(href='#'+href)&attributes(attributes)= name
+
+// Nav Bar
+nav
+  ul  
+    each item in navbar
+     li
+      +link(item, item)(class=item)

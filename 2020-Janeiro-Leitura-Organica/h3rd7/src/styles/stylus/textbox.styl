@@ -1,0 +1,29 @@
+/* Text Box */
+.tbox
+  @apply px-2 my-4 bg-gray-600 pb-4 pt-1 shadow-md
+  border-radius: 0.8rem
+
+  label
+    @apply mx-2 uppercase font-bold text-white
+
+#text-box
+  @apply m-1 bg-gray-200 border-2 rounded-lg border-gray-600
+  @apply flex overflow-hidden
+
+  textarea
+    @apply p-2 text-blue-800 bg-gray-200 outline-none
+
+  div
+    @apply p-1 flex overflow-hidden
+  
+  .btn
+    @apply m-1 py-2 px-4 rounded-full
+    @apply bg-blue-600 text-white font-bold 
+
+    &:hover
+      @apply bg-blue-800
+      transform: translateY(-1px)
+
+  #txtbox_info 
+    @apply text-blue-800 ml-auto mt-auto self-end
+    

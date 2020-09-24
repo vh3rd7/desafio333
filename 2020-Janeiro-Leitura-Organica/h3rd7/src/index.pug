@@ -1,0 +1,19 @@
+doctype html
+//- variaveis
+- const title = 'Leitura Organica'
+- const navbar = {'Home':'Início', 'About':'Sobre', 'Contact':'Contato'}
+
+html(lang='pt-BR')
+  include components/_head
+  
+  body
+    include components/_header
+
+    // Main
+    main(class='container px-8 mx-auto')
+      include contents/text
+      include contents/TextBox
+      include contents/form
+
+    include components/_footer
+    script(src='js/script.js')

@@ -1,0 +1,31 @@
+//@import 'stylus/variables'
+
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+header 
+  @apply w-full
+  img 
+    @apply object-cover h-48 w-full
+
+nav 
+  @apply mb-2 shadow-md 
+  ul
+    @apply flex flex-row bg-gray-300
+    li
+      @apply py-2 px-4 mx-1 bg-blue-500
+      &:hover 
+        @apply bg-blue-800 text-white
+        transform: translateY(2px)
+
+main
+  @import 'stylus/paper'
+  @import 'stylus/textbox'
+
+/* Body */
+body
+  @apply bg-gray-400
+
+
+/**/
